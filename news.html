@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetMusic</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header_logo" href="main.html" ><img src="pic/logo.png" alt="#"></a>
+    <div class="header_nav">
+      <a href="likes.html" class="header_nav_a">Избранные</a>
+      <a href="charts.php" class="header_nav_a">Чарты</a>
+      <a href="news.html" class="header_nav_a">Новости</a>
+    </div>
+    <div class="header_right">
+      <a href="#" class="header_icon"><img src="pic/lupa.svg" alt="#"></a>
+      <a href="javascript:void(0);" class="header_lichcab" id="openRegistrationPopup"><img src="pic/lichkab.svg" alt="Личный кабинет"></a>
+     </div>
+    <button class="burger-menu" id="burgerMenu">
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+    </button>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="likes.html" class="mobile-nav__link">Избранные</a>
+      <a href="charts.php" class="mobile-nav__link">Чарты</a>
+      <a href="news.html" class="mobile-nav__link">Новости</a>
+    </div>
+  </header>
+      <div class="popup" id="registrationPopup">
+        <span class="close" id="closeRegistrationPopup">&times;</span>
+        <h2>Регистрация</h2>
+        <form>
+            <div class="form-group">
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <i class="fas fa-eye show-password" id="showPassword"></i>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Подтверждение пароля</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <i class="fas fa-eye show-password" id="showConfirmPassword"></i>
+            </div>
+            <button type="submit" class="button">Создать аккаунт</button>
+        </form>
+        <a id="switchToLogin" class="down">Есть аккаунт</a>
+      </div>
+    </div>
+    <div class="popup" id="loginPopup">
+      <span class="close" id="closeLoginPopup">&times;</span>
+      <h2>Авторизация</h2>
+      <form>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" required>
+              <i class="fas fa-eye show-password" id="showPassword"></i>
+          </div>
+          <div class="form-group">
+              <label for="confirm-password">Подтверждение пароля</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+              <i class="fas fa-eye show-password" id="showConfirmPassword"></i>
+          </div>
+          <button type="submit" class="button1">Войти</button>
+      </form>
+      <a id="switchToRegistration" class="down1">У меня нет аккаунта</a>
+    </div>
+  </div>
+    <div class="news">
+        <h1 class="news_title">Новости</h1>
+        <div class="news_content">
+          <div class="news_section">
+            <div class="news_section_left">
+              <img class="news_image" src="pic/face4.png">
+            </div>
+            <div class="news_section_right">
+              <h2 class="news_section_title">Исполнитель Face сам удалил свои треки?</h2>
+              <p class="news_section_text">Face заявил, что он самостоятельно удалил треки с нашей платформы.
+                Однако мы сами удалили его треки и заблокировали, чтобы не забывался. 
+                Не верьте слухам!</p>
+            </div>
+          </div>
+          <div class="news_section">
+            <div class="news_section_left">
+              <h2 class="news_section_title">Даня Милохин перенес релиз?</h2>
+              <p class="news_section_text">Все думают, что Даня Милохин перенес релиз из за
+                проблем с природой в Дубае, но на самом деле наша компания
+                 просто не позволила добавить ему трек на нашу площадку, 
+                 чтобы сохранить слушателей. Не за что!
+            </div>
+            <div class="news_section_right">
+              <img class="news_image" src="pic/d4.png">
+            </div>
+          </div>
+          <div class="news_section">
+            <div class="news_section_left">
+              <img class="news_image" src="pic/face4.png">
+            </div>
+            <div class="news_section_right">
+              <h2 class="news_section_title">Исполнитель Face сам удалил свои треки?</h2>
+              <p class="news_section_text">Face заявил, что он самостоятельно удалил треки с нашей платформы.
+                Однако мы сами удалили его треки и заблокировали, чтобы не забывался. 
+                Не верьте слухам!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="footer">
+        <img src="pic/logo.png" class="footer_logo">
+        <ul class="footer_links">
+          <li class="footer_links_li"><a class="footer_links_a" href="likes.html">Избранные</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="charts.php">Чарты</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="news.html">Новости</a></li>
+        </ul>
+      </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #2C2C54;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  flex: 1;
+  padding-left: 50px;
+}
+.header_nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.header_nav_a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-family: Jura;
+  font-size: 32px;
+  padding: 20px;
+}
+.header_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.header_icon {
+  padding-right: 50px;
+}
+
+.user {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+.user_title {
+  font-size: 35px;
+  color: #ffffff;
+  font-family: Jura;
+}
+.user_line {
+  height: 1px;
+  width: 90%;
+  background-color: #686DE0;
+  margin-bottom: 20px;
+}
+.user_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.user_image {
+  width: 20%;
+  height: 20%;
+  margin: 20px;
+}
+.user_info {
+  flex-grow: 1;
+  padding: 20px;
+}
+.user_name {
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Jura;
+}
+.user_city {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: Jura;
+  margin-bottom: 10px;
+}
+.user_text {
+  text-align: left;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: Jura;
+}
+
+.album {
+  padding: 10px;
+  text-align: center;
+}
+.album_title {
+  margin-bottom: 20px;
+  font-family: Oswald;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.album_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+}
+.album_card {
+  width: 250px;
+  overflow: hidden;
+}
+.album_img {
+  width: 100%;
+  height: auto;
+}
+.album_info {
+  padding: 10px;
+}
+.album_sub {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: Jura;
+}
+.album_a {
+  font-size: 15px;
+  color: #877CFF;
+  font-family: Jura;
+}
+
+.sub {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.sub_p {
+  color: #ffffff;
+  font-family: Jura;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.sub_input {
+  display: flex;
+}
+.sub_btn {
+  padding: 10px 20px;
+  background-color: #686DE0;
+  font-family: Oswald;
+  font-size: 14px;
+  border-radius: 7px;
+  color: #fff;
+}
+.sub_pre {
+  display: block;
+  margin-top: 10px;
+  font-family: Jura;
+  font-size: 12px;
+  color: #6987D3;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+#textbox {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: -15px;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-left: 60px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #ffffff;
+  font-family: Jura;
+  font-size: 22px;
+  padding: 20px;
+}
+.footer_logo {
+  width: 100px;
+  padding-left: 30px;
+}
+.footer_links {
+  list-style: none;
+  display: flex;
+}
+.footer_links_li {
+  margin-left: 20px;
+}
+.footer_links_a {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}/*# sourceMappingURL=lichkab.css.map */

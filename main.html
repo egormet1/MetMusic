@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetMusic</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="header">
+    <a class="header_logo" href="main.html" ><img src="pic/logo.png" alt="#"></a>
+    <div class="header_nav">
+      <a href="likes.html" class="header_nav_a">Избранные</a>
+      <a href="charts.php" class="header_nav_a">Чарты</a>
+      <a href="news.html" class="header_nav_a">Новости</a>
+    </div>
+    <div class="header_right">
+      <a href="#" class="header_icon"><img src="pic/lupa.svg" alt="#"></a>
+      <a href="javascript:void(0);" class="header_lichcab" id="openRegistrationPopup"><img src="pic/lichkab.svg" alt="Личный кабинет"></a>
+     </div>
+    <button class="burger-menu" id="burgerMenu">
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+      <span class="burger-menu__line"></span>
+    </button>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="likes.html" class="mobile-nav__link">Избранные</a>
+      <a href="charts.php" class="mobile-nav__link">Чарты</a>
+      <a href="news.html" class="mobile-nav__link">Новости</a>
+    </div>
+  </header>
+<form action="registration.php" method="post">
+  <div class="popup" id="registrationPopup">
+    <span class="close" id="closeRegistrationPopup">&times;</span>
+    <h2>Регистрация</h2>
+    <div class="form-group">
+        <label for="login">Логин</label>
+        <input type="text" id="login" name="login" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+        <i class="fas fa-eye show-password" id="showPassword"></i>
+    </div>
+    <div class="form-group">
+        <label for="confirm-password">Подтверждение пароля</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <i class="fas fa-eye show-password" id="showConfirmPassword"></i>
+    </div>
+    <button type="submit" class="button">Создать аккаунт</button>
+    <a id="switchToLogin" class="down">Есть аккаунт</a>
+  </div>
+</form>
+<form action="login.php" method="post">
+    <div class="popup" id="loginPopup">
+      <span class="close" id="closeLoginPopup">&times;</span>
+      <h2>Авторизация</h2>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Пароль</label>
+              <input type="password" id="password" name="password" required>
+              <i class="fas fa-eye show-password" id="showPassword"></i>
+          </div>
+          <div class="form-group">
+              <label for="confirm-password">Подтверждение пароля</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+              <i class="fas fa-eye show-password" id="showConfirmPassword"></i>
+          </div>
+          <button type="submit" class="button1">Войти</button>
+      <a id="switchToRegistration" class="down1">У меня нет аккаунта</a>
+    </div>
+  </div>
+  </form>
+    <div class="intro">
+        <h2 class="intro_title">Рэп, хип-хоп, джаз и<br>
+            классика в одном месте!</h2>
+        <p class="intro_subtitle">Вы меломан и всегда хотели послушать классику<br>
+             после рока? Вам надоело что на других музыкальных<br>
+             платформах треки, которые для вас подбирают,<br>
+             скучные? ВЫ пришли по адресу, здесь будет <br>
+             комфортно всем</p>
+        <a class="intro_btn"  href="lichcab.php">Войти в аккаунт</a>
+      </div>
+    <div class="clip">
+        <h1 class="clip_h1">Самый популярный клип на этой недели</h1>
+            <div class="video_container">
+                <video controls class="clip_video">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+    </div>
+        <div class="tracks"> 
+            <div class="tracks_cont">
+                <h2 class="tracks_title">Нравится нашим пользователям</h2>
+            <div class="tracks_card">
+                <img src="pic/lsp.png" alt="#">
+                <a class="tracks_btn" href="charts.php">Открыть чарты</a>
+            </div>
+            <div class="tracks_card">
+                <img src="pic/dt.png" alt="#">
+                <a class="tracks_btn" href="charts.php">Открыть чарты</a>
+            </div>
+            <div class="tracks_card">
+                <img src="pic/og.png" alt="#">
+                <a class="tracks_btn" href="charts.php">Открыть чарты</a>
+            </div>
+        </div>
+    </div>
+    <div class="story">
+        <div class="story_title">Новости</div>
+        <div class="story_cont">
+          <div class="story_left">
+            <img class="story_left_image" src="pic/black.png" alt="#">
+            <div class="story_left_text">Банда  ‘KFC’ после игры в баскетбола и чтения репа, 
+                пошла есть в ‘Вкусно и точка’ </div>
+          </div>
+          <div class="story_right">
+            <div class="story_right_cont">
+              <img class="story_right_image" src="pic/image 31.png" alt="#">
+              <div class="story_right_text-cont">
+                <div class="story_right_title">Исполнитель Face сам удалил свои треки?</div>
+                <div class="story_right_text">Face заявил, что он самостоятельно удалил треки с нашей платформы. Однако мы сами удалили его треки и заблокировали, чтобы не забывался. Не верьте слухам!</div>
+              </div>
+            </div>
+            <div class="story_right_cont">
+              <img class="story_right_image" src="pic/image 33.png" alt="#">
+              <div class="story_right_text-cont">
+                <div class="story_right_title">Даня Милохин перенес релиз?</div>
+                <div class="story_right_text">Все думают, что Даня Милохин перенес релиз из за проблем с природой в Дубае, но на самом деле наша компания просто не позволила добавить ему трек на нашу площадку, чтобы сохранить слушателей. Не за что!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="playlist">
+        <div class="playlist_title">Лучшие альбомы месяца</div>
+        <div class="playlist_card">
+            <img src="pic/pngwing 20.png" alt="#" class="playlist_card_image">
+            <div class="playlist_card_content">
+            <h3 class="playlist_card_title">Альбом ‘MONEY COUNTER</h3>
+            <p class="playlist_card_text">Недавний релиз Scally Milano начинает форситься с помощью тиктока. 
+
+            </p>
+            <a href="alboms.html" class="playlist_card_link">Слушать →</a>
+            </div>
+        </div>
+        <div class="playlist_card">
+            <img src="pic/image 6.png" alt="#" class="playlist_card_image">
+            <div class="playlist_card_content">
+            <h3 class="playlist_card_title">Альбом ‘Boys Dont Cry’</h3>
+            <p class="playlist_card_text">Альбом разрывает чарты почти каждым 
+                своим треком, Gone Fludd заранее говорил что нас ждет мясо)</p>
+            <a href="alboms.html" class="playlist_card_link">Слушать →</a>
+            </div>
+        </div>
+        <div class="playlist_card">
+            <img src="pic/image 6.png" alt="#" class="playlist_card_image">
+            <div class="playlist_card_content">
+            <h3 class="playlist_card_title">Альбом ‘Boys Dont Cry’</h3>
+            <p class="playlist_card_text">Альбом разрывает чарты почти каждым 
+                своим треком, Gone Fludd заранее говорил что нас ждет мясо)</p>
+            <a href="alboms.html" class="playlist_card_link">Слушать →</a>
+            </div>
+        </div>
+        <div class="playlist_card">
+            <img src="pic/image 6.png" alt="#" class="playlist_card_image">
+            <div class="playlist_card_content">
+            <h3 class="playlist_card_title">Альбом ‘Boys Dont Cry’</h3>
+            <p class="playlist_card_text">Альбом разрывает чарты почти каждым 
+                своим треком, Gone Fludd заранее говорил что нас ждет мясо)</p>
+            <a href="alboms.html" class="playlist_card_link">Слушать →</a>
+            </div>
+        </div>
+    </div>
+    <div class="sub">
+        <p  class="sub_p">Напишите вашу почту ниже, чтобы получать рассылку от <br> MetMusic и быть в курсе каждого события.</p>
+        <div class="sub_input">
+          <input type="text" value="Ваш email" id="textbox" onfocus="if(this.value == 'Ваш email') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Ваш email'; }">
+          <button class="sub_btn" onclick="submitFunction()">Подписаться</button>
+        </div>
+        <p class="sub_pre">Нажимая на кнопку “Подписаться”, вы принимаете правила пользовательского соглашения</p>
+      </div>
+      <footer class="footer">
+        <img src="pic/logo.png" class="footer_logo">
+        <ul class="footer_links">
+          <li class="footer_links_li"><a class="footer_links_a" href="likes.html">Избранные</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="charts.php">Чарты</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="news.html">Новости</a></li>
+        </ul>
+      </footer>
+      <script src="main.js"></script>
+</body>
+</html>

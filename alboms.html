@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetMusic</title>
+    <link rel="stylesheet" href="alboms.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header_logo" href="main.html" ><img src="pic/logo.png" alt="#"></a>
+        <div class="header_nav">
+          <a href="likes.html" class="header_nav_a">Избранные</a>
+          <a href="charts.php" class="header_nav_a">Чарты</a>
+          <a href="news.html" class="header_nav_a">Новости</a>
+        </div>
+        <div class="header_right">
+          <a  href="#" class="header_icon"><img src="pic/lupa.svg" alt="#"></a>
+          <a href="#popup" class="header_lichcab" id="openPopup"><img src="pic/lichkab.svg" alt="#"></a>
+        </div>
+        <button class="burger-menu" id="burgerMenu">
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+        </button>
+        <div class="mobile-nav" id="mobileNav">
+          <a href="likes.html" class="mobile-nav__link">Избранные</a>
+          <a href="charts.php" class="mobile-nav__link">Чарты</a>
+          <a href="news.html" class="mobile-nav__link">Новости</a>
+        </div>
+      </header>
+    <div class="album">
+            <div class="album_title">MONEY COUNTER</div>
+            <div class="album_cover"></div>
+        <div class="track_list">
+            <div class="track">
+                <audio id="music" src="muz/Gnida-SM.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                  <div class="track_info_h">Гнида</div>
+                  <div class="track_info_p">Scally Milano</div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">2:44</div>
+              </div>            
+              <div class="track">
+                <audio id="music" src="muz/NeVinovat-SM.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                    <div class="track_info_h">Не виноват</div>
+                    <div class="track_info_p">Scally Milano</div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">2:12</div>
+            </div>          
+            <div class="track">
+                <audio id="music" src="muz/SWAG-SM,163.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                    <div class="track_info_h">SWAG</div>
+                    <div class="track_info_p">Scally Milano , 163ONMYNECK </div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">2:31</div>
+            </div>          
+            <div class="track">
+                <audio id="music" src="muz/Kotleta-SM.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                    <div class="track_info_h">Котлета</div>
+                    <div class="track_info_p">Scally Milano</div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">1:56</div>
+            </div>          
+            <div class="track">
+                <audio id="music" src="muz/BukvaH-SM.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                    <div class="track_info_h">Буква X</div>
+                    <div class="track_info_p">Scally Milano, LOVV66</div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">3:02</div>
+            </div>   
+            <div class="track">
+                <audio id="music" src="muz/demon-SM.mp3"></audio>
+                <img class="track_img" src="pic/albom.png" onclick="togglePlayStop(this.parentNode)">
+                <div id="play-icon" class="play-icon">▶</div>
+                <div id="stop-icon" class="stop-icon">■</div>
+                <div class="track_info">
+                  <div class="track_info_h">Демон</div>
+                  <div class="track_info_p">Scally Milano</div>
+                </div>
+                <div class="heart" id="heart">♥</div>
+                <div class="track_time">1:12</div>
+            </div>          
+        </div>
+    </div>
+    <footer class="footer">
+        <img src="pic/logo.png" class="footer_logo">
+        <ul class="footer_links">
+          <li class="footer_links_li"><a class="footer_links_a" href="likes.html">Избранные</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="charts.php">Чарты</a></li>
+          <li class="footer_links_li"><a class="footer_links_a" href="news.html">Новости</a></li>
+        </ul>
+      </footer>
+      <script src="main.js"></script>
+</body>
+</html>
